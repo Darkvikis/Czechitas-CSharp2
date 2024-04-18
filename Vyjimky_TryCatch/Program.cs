@@ -15,13 +15,27 @@ namespace TryCatch
             Console.WriteLine("========================================");
             Console.Write("Zadejte jmeno: ");
             string jmeno = Console.ReadLine();
-            Console.Write("Zadejte telefonni cislo: ");
+            Console.Write("Zadejte telefonni cislo (bez predvolby): ");
             string cislo = Console.ReadLine();
 
-            Clovek prvniClovek = new Clovek(jmeno, int.Parse(cislo));
-            prvniClovek.VypisJmenoACislo();
+            try
+            {   // Muzeme kontrolovat i tady
+                // Kontrola tady je o neco korektnejsi, ale moc nas toho nenauci, proto je tu zakomentovana
+                //if (cislo == null || cislo.Length != 9)
+                //{
+                //  Console.WriteLine("Mas spatne cislo. Zkus to znovu.");
+                //  return;
+                //}
 
-            Console.ReadLine();
+                Clovek prvniClovek = new Clovek(jmeno, int.Parse(cislo));
+                prvniClovek.VypisJmenoACislo();
+            }
+            // Tady chytame vyjimky
+            // Jelikoz tu mame jen obecnou, tak nam to vezme vsechny, ale muzeme tu vytvorit i catch pro ArgumentException
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
         }
     }
