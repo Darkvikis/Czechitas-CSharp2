@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Program
+namespace Kolekce
 {
-    static public void Main()
+    public class Program
     {
-        List<double> cisla = new List<double>
+        static public void Main()
+        {
+            List<double> cisla = new List<double>
         {
             0.046939913,
             0.295866297,
@@ -19,18 +21,19 @@ public class Program
             0.645816929
         };
 
-        // Vypis vsechna cisla na konzoli (nachystej si pro to funkci)
-        // Vypis(cisla);
+            // Vypis vsechna cisla na konzoli (nachystej si pro to funkci)
+            // Vypis(cisla);
 
-        // Vypis na konzoli pocet cisel v seznamu
-        // VypisPocet(cisla);
+            // Vypis na konzoli pocet cisel v seznamu
+            // VypisPocet(cisla);
 
-        // Pridej cislo 0.5 do seznamu
+            // Pridej cislo 0.5 do seznamu
 
-        // vypis prvni cislo ze seznamu, ktere je vetsi nez 0.8
+            // vypis prvni cislo ze seznamu, ktere je vetsi nez 0.8
 
-        // najdi nejvetsi cislo v seznamu, vypis, ktere to je, a odstran ho ze seznamu
+            // najdi nejvetsi cislo v seznamu, vypis, ktere to je, a odstran ho ze seznamu
 
-        // vypis opet vsechna cisla a jejich pocet
+            // vypis opet vsechna cisla a jejich pocet
+        }
     }
 }
