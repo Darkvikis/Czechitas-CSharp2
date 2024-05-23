@@ -31,10 +31,10 @@ public class Program
     {
         // ==========================================
         // 1. Nalezněte slova začínající písmenem 'M'
-        List<string> ovoce = new List<string>() { "Merunka", "Jablko", "Pomeranc", "Meloun", "Malina", "Limetka" };
+        List<string> ovoce = new List<string>() { "Merunka", "Jablko", "Pomeranc", "meloun", "Malina", "Limetka" };
 
         // 1. Řešení
-        List<string> mOvoce = null;
+        List<string> mOvoce = ovoce.Where(ovoce => ovoce.StartsWith("M", StringComparison.InvariantCultureIgnoreCase)).ToList();
 
         foreach (string o in mOvoce)
         {
@@ -45,11 +45,11 @@ public class Program
         // 2. Která z následujících čísel jsou násobky 4 nebo 6
         List<int> ruznaCisla = new List<int>()
         {
-            15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96, 15, 8
         };
 
         // 2. Řešení
-        List<int> nasobky4a6 = null;
+        List<int> nasobky4a6 = ruznaCisla.Where(num => (num % 4 == 0 || num % 6 == 0)).ToList();
 
         foreach (int cislo in nasobky4a6)
         {
@@ -57,7 +57,7 @@ public class Program
         }
 
         // 3. Kolik je v seznamu ruznaCisla čísel?
-        // Console.WriteLine(?????);
+        Console.WriteLine($"Pocet originalnich cisel {ruznaCisla.Distinct().Count()}");
 
         // ==========================================
         // 4. Seřaďte jména vzestupně
@@ -71,7 +71,7 @@ public class Program
         };
 
         // 4. Řešení
-        List<string> vzestupne = null;
+        List<string> vzestupne = jmena;
 
         foreach (string text in vzestupne)
         {
@@ -86,7 +86,7 @@ public class Program
         };
 
         // 5. Řešení
-        // Console.WriteLine(?????);
+        Console.WriteLine($"Souce je {utrata.Sum().ToString("n2")}");
 
         // ==========================================		
         // 6. Jaké je největší cena?
@@ -96,7 +96,7 @@ public class Program
         };
 
         // 6. Řešení
-        // Console.WriteLine(?????);
+        Console.WriteLine($"Maximalni je {utrata.Max()}");
 
         // ==========================================		
         // 7. Zobrazte vsechny milionare v kazde bance
@@ -144,5 +144,6 @@ public class Program
         {
             Console.WriteLine(zakaznik.Jmeno + " v " + zakaznik.Banka);
         }
+
     }
 }
