@@ -10,12 +10,14 @@ public class Program
         //v ramci cyklu nechci resit, jake konkretni zviratko to je
         //vytvorte alespon 3 ruzna zviratka
         //hint: budete potrebovat vhodnou bazovou tridu a virtual/abstract a override
-        Pes fik = new();
-        Vlk petr = new();
-        Kocka haslerka = new();
+        Zvire fik = new Pes();
+        Zvire petr = new Vlk();
+        Zvire haslerka = new Kocka();
 
         List<Zvire> zviratka = new() { fik, petr, haslerka };
 
+        (haslerka as Kocka)?.UraziSe();
+        (petr as Kocka)?.UraziSe();
         zviratka.ForEach(x => x.UdelaZvuk());
     }
 
@@ -28,6 +30,7 @@ public abstract class Zvire
 
 public class Pes : Zvire
 {
+
     public override void UdelaZvuk()
     {
         Console.WriteLine("Haf, haf");
@@ -36,6 +39,10 @@ public class Pes : Zvire
 
 public class Kocka : Zvire
 {
+    public void UraziSe()
+    {
+        Console.WriteLine("Urazena kocka");
+    }
     public override void UdelaZvuk()
     {
         Console.WriteLine("Mnau, mnau");
