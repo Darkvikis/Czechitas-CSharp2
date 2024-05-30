@@ -43,6 +43,7 @@ public class Kocka : Zvire
     {
         Console.WriteLine("Urazena kocka");
     }
+
     public override void UdelaZvuk()
     {
         Console.WriteLine("Mnau, mnau");
