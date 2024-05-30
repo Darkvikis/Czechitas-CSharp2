@@ -118,7 +118,14 @@ public class Program
         };
 
         // 7. Řešení
-        List<SkupinaMilionaru> skupinyPodleBanky = null;
+        List<SkupinaMilionaru> skupinyPodleBanky = zakaznici
+            .Where(z => z.Zustatek >= 1000000)
+            .GroupBy(z => z.Banka)
+            .Select(g => new SkupinaMilionaru
+            {
+                Banka = g.Key,
+                Milionari = g.Select(z => z.Jmeno)
+            }).ToList();
 
         foreach (var polozka in skupinyPodleBanky)
         {
@@ -138,7 +145,7 @@ public class Program
         };
 
         // 8. Řešení
-        List<Zakaznik> reportMilionaru = null;
+        List<Zakaznik> reportMilionaru = zakaznici.Where(z => z.Zustatek >= 1000000).ToList();
 
         foreach (Zakaznik zakaznik in reportMilionaru)
         {
