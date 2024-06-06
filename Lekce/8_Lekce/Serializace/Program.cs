@@ -26,10 +26,9 @@ public class Program
             new Clovek("Petr", "Novak", 778111222)
         };
 
-        //1. Vytvorte slozku TelefonniSeznam v adresari Appdata pro konkretniho uzivatele
-        //2. Do souboru telefonniSeznam.csv ulozte obsah seznamu telefonniSeznam tak,
-        //   ze kazdy zaznam bude na jednom radku a oddelene budou carkami
-        //3. Napiste cyklus, ktery soubor precte a zpatky ho ulozi do noveho seznamu
+        //1. Upravte tridu Clovek, aby byla serializovatelna
+        //2. Ulozte cely telefonni seznam do XML pomoci serializeru a StreamWriteru
+        //3. Nactete cely telefonni seznam ze souboru XML pomoci deserializeru a StreamReaderu
 
     }
 }
