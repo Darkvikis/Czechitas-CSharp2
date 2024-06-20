@@ -43,6 +43,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UkladaniDoCSV", "Lekce\8_Le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializace", "Lekce\8_Lekce\Serializace\Serializace.csproj", "{7E93000F-A372-4A51-BA38-A935D4901273}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projekt", "Projekt", "{E5D6C69A-9D8D-4A8B-878C-274641DE4F33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportAndExport", "Projekt\ImportAndExport\ImportAndExport.csproj", "{AAB1D093-6BA1-441A-A4A6-E11BBBA9C4AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{7E93000F-A372-4A51-BA38-A935D4901273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E93000F-A372-4A51-BA38-A935D4901273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E93000F-A372-4A51-BA38-A935D4901273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB1D093-6BA1-441A-A4A6-E11BBBA9C4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB1D093-6BA1-441A-A4A6-E11BBBA9C4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB1D093-6BA1-441A-A4A6-E11BBBA9C4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB1D093-6BA1-441A-A4A6-E11BBBA9C4AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +129,7 @@ Global
 		{DFB0058B-CBA6-4C39-86D2-2D5BAABD8E59} = {E411AAC0-F158-4A03-8823-F09FFA03BC8B}
 		{22991684-A9B7-44DA-95E0-E1C0183CD1AA} = {DFB0058B-CBA6-4C39-86D2-2D5BAABD8E59}
 		{7E93000F-A372-4A51-BA38-A935D4901273} = {DFB0058B-CBA6-4C39-86D2-2D5BAABD8E59}
+		{AAB1D093-6BA1-441A-A4A6-E11BBBA9C4AA} = {E5D6C69A-9D8D-4A8B-878C-274641DE4F33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C81C7D0-0ADF-4DA5-935C-A099F6C4C722}
