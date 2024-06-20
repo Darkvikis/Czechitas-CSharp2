@@ -6,7 +6,7 @@ namespace ContactManager
 {
     class Program
     {
-        static List<Contact> contacts = new List<Contact>();
+        static List<Contact> contacts = new();
         static string defaultFolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ContactManager");
         static string defaultFilePath = Path.Combine(defaultFolderPath, "contacts.xml");
 
@@ -56,6 +56,7 @@ namespace ContactManager
                 }
             }
         }
+
 
         static void AddContact()
         {
