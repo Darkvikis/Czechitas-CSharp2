@@ -51,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9_Lekce", "9_Lekce", "{9744
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kalkulacka", "Lekce\9_Lekce\Kalkulacka.csproj", "{96174B5B-2A7C-4D4C-86DD-92220B86FE73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkulacka.Test", "Kalkulacka.Test\Kalkulacka.Test.csproj", "{9106937D-3D55-4E72-9394-16151D7675FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{96174B5B-2A7C-4D4C-86DD-92220B86FE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96174B5B-2A7C-4D4C-86DD-92220B86FE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96174B5B-2A7C-4D4C-86DD-92220B86FE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9106937D-3D55-4E72-9394-16151D7675FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9106937D-3D55-4E72-9394-16151D7675FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9106937D-3D55-4E72-9394-16151D7675FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9106937D-3D55-4E72-9394-16151D7675FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{AAB1D093-6BA1-441A-A4A6-E11BBBA9C4AA} = {E5D6C69A-9D8D-4A8B-878C-274641DE4F33}
 		{9744D8FF-0C51-4611-95C1-8153BC63CF50} = {E411AAC0-F158-4A03-8823-F09FFA03BC8B}
 		{96174B5B-2A7C-4D4C-86DD-92220B86FE73} = {9744D8FF-0C51-4611-95C1-8153BC63CF50}
+		{9106937D-3D55-4E72-9394-16151D7675FF} = {9744D8FF-0C51-4611-95C1-8153BC63CF50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C81C7D0-0ADF-4DA5-935C-A099F6C4C722}
